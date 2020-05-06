@@ -1,0 +1,31 @@
+[
+  
+	{
+        "name": "Clothing and Electronics",
+        "description": "Contains sample data for demo",
+        "url": "clothing-and-electronics_2_13_26.zip",
+        "size": "62mb",
+        "platformVersion": "2.13.26"
+    },
+	{
+        "name": "Clothing and Electronics",
+        "description": "Contains sample data for demo",
+        "url": "clothing-and-electronics_2_13_35.zip",
+        "size": "62mb",
+        "platformVersion": "2.13.35"
+    },
+	{
+        "name": "Clothing and Electronics",
+        "description": "Contains sample data for demo",
+        "url": "clothing-and-electronics_2_13_47.zip",
+        "size": "62mb",
+        "platformVersion": "2.13.47"
+    },
+	{
+        "name": "Clothing and Electronics",
+        "description": "Contains sample data for demo",
+        "url": "clothing-and-electronics_3_0_0.zip",
+        "size": "46mb",
+        "platformVersion": "3.0.0"
+    }
+]
