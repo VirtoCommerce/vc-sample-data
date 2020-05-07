@@ -24,7 +24,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Zip sample data
-      run: zip -r clothing-and-electronics_3_0_0.zip ./Setup/ClothingAndElectronics/
+      run: zip -r clothing-and-electronics_3_0_0.zip ./Setup/ClothingAndElectronics/ -x '.gitattributes'
 
     - name: Upload a Build Artifact to Azure Blob Storage
       uses: fixpoint/azblob-upload-artifact@v3.3
