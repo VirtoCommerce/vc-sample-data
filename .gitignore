@@ -272,3 +272,4 @@ __pycache__/
 # Webpack output
 dist/
 /build/Build.cs
+.DS_Store
