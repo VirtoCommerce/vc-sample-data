@@ -27,5 +27,12 @@
         "url": "clothing-and-electronics_3_0_0.zip",
         "size": "63mb",
         "platformVersion": "3.0.0"
+    },
+	{
+        "name": "Clothing and Electronics",
+        "description": "Contains sample data for demo",
+        "url": "clothing-and-electronics_3_0_3.zip",
+        "size": "63mb",
+        "platformVersion": "3.0.0"
     }
 ]
