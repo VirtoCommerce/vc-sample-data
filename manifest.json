@@ -27,5 +27,12 @@
         "url": "clothing-and-electronics_3_0_0.zip",
         "size": "63mb",
         "platformVersion": "3.0.0"
+    },
+	{
+        "name": "Clothing and Electronics without themes",
+        "description": "Contains sample data for demo",
+        "url": "clothing-and-electronics-themeless_3_0_0.zip",
+        "size": "50mb",
+        "platformVersion": "3.0.0"
     }
 ]
