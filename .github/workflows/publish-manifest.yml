@@ -1,0 +1,36 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Publish manifest
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  workflow_dispatch:
+
+  push:
+    branches: [ release/3.0.0 ]
+    paths:
+      - 'manifest.json'
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    - name: Upload manifest to Azure Blob Storage
+      uses: fixpoint/azblob-upload-artifact@v3.3
+      with:
+        # Connection string
+        connection-string: ${{ secrets.BLOB_STORAGE_CONNECTION_STRING }}
+        # Artifact name
+        name: .
+        # Directory containing files to upload
+        path: manifest.json
+        # Container name
+        container: sample-data # optional, default is github-action-artifacts
+        # Remove all blobs under the target blob (use "true" to enable this option)
+        cleanup: true # optional, default is false
