@@ -34,8 +34,7 @@
         "url": "clothing-and-electronics-themeless_3_0_0.zip",
         "size": "50mb",
         "platformVersion": "3.0.0"
-    }, ,
-	{
+    },	{
         "name": "B2B sample store",
         "description": "Contains sample data for B2B sample",
         "url": "b2b-sample-store.zip",
