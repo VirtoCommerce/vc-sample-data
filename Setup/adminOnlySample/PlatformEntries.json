@@ -1,0 +1,2196 @@
+﻿{"Roles":[
+    {
+      "Description": "Working only with electronic store. catalogs,  orders and cms",
+      "Permissions": [
+        {
+          "Id": "content:create",
+          "Name": "content:create",
+          "ModuleId": "VirtoCommerce.Content",
+          "GroupName": "Content",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "store:update",
+          "Name": "store:update",
+          "ModuleId": "VirtoCommerce.Store",
+          "GroupName": "Store",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "StoreSelectedScope"
+            }
+          ]
+        },
+        {
+          "Id": "catalog:export",
+          "Name": "catalog:export",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "content:read",
+          "Name": "content:read",
+          "ModuleId": "VirtoCommerce.Content",
+          "GroupName": "Content",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "store:read",
+          "Name": "store:read",
+          "ModuleId": "VirtoCommerce.Store",
+          "GroupName": "Store",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "StoreSelectedScope"
+            }
+          ]
+        },
+        {
+          "Id": "order:access",
+          "Name": "order:access",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "order:create",
+          "Name": "order:create",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "content:update",
+          "Name": "content:update",
+          "ModuleId": "VirtoCommerce.Content",
+          "GroupName": "Content",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "content:access",
+          "Name": "content:access",
+          "ModuleId": "VirtoCommerce.Content",
+          "GroupName": "Content",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "catalog:read",
+          "Name": "catalog:read",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "SelectedCatalogScope"
+            }
+          ]
+        },
+        {
+          "Id": "store:create",
+          "Name": "store:create",
+          "ModuleId": "VirtoCommerce.Store",
+          "GroupName": "Store",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "catalog:create",
+          "Name": "catalog:create",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "order:update",
+          "Name": "order:update",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "OnlyOrderResponsibleScope",
+              "Label": "none",
+              "Scope": "{{userId}}"
+            },
+            {
+              "Type": "OrderSelectedStoreScope"
+            }
+          ]
+        },
+        {
+          "Id": "catalog:update",
+          "Name": "catalog:update",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "SelectedCatalogScope"
+            }
+          ]
+        },
+        {
+          "Id": "catalog:import",
+          "Name": "catalog:import",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "content:delete",
+          "Name": "content:delete",
+          "ModuleId": "VirtoCommerce.Content",
+          "GroupName": "Content",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "order:delete",
+          "Name": "order:delete",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "OnlyOrderResponsibleScope",
+              "Label": "none",
+              "Scope": "{{userId}}"
+            },
+            {
+              "Type": "OrderSelectedStoreScope"
+            }
+          ]
+        },
+        {
+          "Id": "order:read",
+          "Name": "order:read",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "OnlyOrderResponsibleScope",
+              "Label": "none",
+              "Scope": "{{userId}}"
+            },
+            {
+              "Type": "OrderSelectedStoreScope"
+            }
+          ]
+        },
+        {
+          "Id": "store:access",
+          "Name": "store:access",
+          "ModuleId": "VirtoCommerce.Store",
+          "GroupName": "Store",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "store:delete",
+          "Name": "store:delete",
+          "ModuleId": "VirtoCommerce.Store",
+          "GroupName": "Store",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "StoreSelectedScope"
+            }
+          ]
+        },
+        {
+          "Id": "catalog:access",
+          "Name": "catalog:access",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "catalog:delete",
+          "Name": "catalog:delete",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "SelectedCatalogScope"
+            }
+          ]
+        }
+      ],
+      "Id": "21e43f94805e4315ad877de0a19a9263",
+      "Name": "Electronic  store administrator",
+      "NormalizedName": "ELECTRONIC  STORE ADMINISTRATOR",
+      "ConcurrencyStamp": "d91be667-a88b-4113-bd8d-f3cb57bd794e"
+    },
+    {
+      "Permissions": [
+        {
+          "Id": "order:read",
+          "Name": "order:read",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "OnlyOrderResponsibleScope",
+              "Label": "none",
+              "Scope": "{{userId}}"
+            },
+            {
+              "Type": "OrderSelectedStoreScope"
+            }
+          ]
+        },
+        {
+          "Id": "order:access",
+          "Name": "order:access",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "order:read_prices",
+          "Name": "order:read_prices",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        }
+      ],
+      "Id": "29593909-8959-4d16-9872-beb8736abaaf",
+      "Name": "Sales Executive",
+      "NormalizedName": "SALES EXECUTIVE",
+      "ConcurrencyStamp": "41c5418a-1280-4f49-9ddc-651c98d76572"
+    },
+    {
+      "Permissions": [
+        {
+          "Id": "catalog:access",
+          "Name": "catalog:access",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "catalog:create",
+          "Name": "catalog:create",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        }
+      ],
+      "Id": "4ba77e5d-dfc1-407e-9d4c-ea9e0cc46d9e",
+      "Name": "Warranty Specialist",
+      "NormalizedName": "WARRANTY SPECIALIST",
+      "ConcurrencyStamp": "14e068ec-0538-46ae-aaa3-8e99fee29f8f"
+    },
+    {
+      "Description": "Supervise all orders from Clothing store",
+      "Permissions": [
+        {
+          "Id": "order:access",
+          "Name": "order:access",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "order:update",
+          "Name": "order:update",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "OnlyOrderResponsibleScope",
+              "Label": "none",
+              "Scope": "{{userId}}"
+            },
+            {
+              "Type": "OrderSelectedStoreScope"
+            }
+          ]
+        },
+        {
+          "Id": "order:delete",
+          "Name": "order:delete",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "OnlyOrderResponsibleScope",
+              "Label": "none",
+              "Scope": "{{userId}}"
+            },
+            {
+              "Type": "OrderSelectedStoreScope"
+            }
+          ]
+        },
+        {
+          "Id": "order:read",
+          "Name": "order:read",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "OnlyOrderResponsibleScope",
+              "Label": "none",
+              "Scope": "{{userId}}"
+            },
+            {
+              "Type": "OrderSelectedStoreScope"
+            }
+          ]
+        },
+        {
+          "Id": "order:create",
+          "Name": "order:create",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        }
+      ],
+      "Id": "50a966a5040d4166852f4827cf892e83",
+      "Name": "Clothing order supervisor",
+      "NormalizedName": "CLOTHING ORDER SUPERVISOR",
+      "ConcurrencyStamp": "e86e6937-de75-4802-95ff-4890d7459647"
+    },
+    {
+      "Description": "Working with only accestory category of Clothing catalog",
+      "Permissions": [
+        {
+          "Id": "catalog:update",
+          "Name": "catalog:update",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "SelectedCatalogScope"
+            }
+          ]
+        },
+        {
+          "Id": "catalog:read",
+          "Name": "catalog:read",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "SelectedCatalogScope"
+            }
+          ]
+        },
+        {
+          "Id": "catalog:delete",
+          "Name": "catalog:delete",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "SelectedCatalogScope"
+            }
+          ]
+        },
+        {
+          "Id": "catalog:access",
+          "Name": "catalog:access",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "catalog:create",
+          "Name": "catalog:create",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        }
+      ],
+      "Id": "87105cd4bcf940adad11a7b83fe2913c",
+      "Name": "Clothing accessory category manager",
+      "NormalizedName": "CLOTHING ACCESSORY CATEGORY MANAGER",
+      "ConcurrencyStamp": "dd3b5a85-8380-4fec-9bda-60b80a8cd955"
+    },
+    {
+      "Permissions": [
+        {
+          "Id": "store:access",
+          "Name": "store:access",
+          "ModuleId": "VirtoCommerce.Store",
+          "GroupName": "Store",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "store:create",
+          "Name": "store:create",
+          "ModuleId": "VirtoCommerce.Store",
+          "GroupName": "Store",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "store:read",
+          "Name": "store:read",
+          "ModuleId": "VirtoCommerce.Store",
+          "GroupName": "Store",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "StoreSelectedScope"
+            }
+          ]
+        },
+        {
+          "Id": "cart:read",
+          "Name": "cart:read",
+          "ModuleId": "VirtoCommerce.Cart",
+          "GroupName": "Cart",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "cart:create",
+          "Name": "cart:create",
+          "ModuleId": "VirtoCommerce.Cart",
+          "GroupName": "Cart",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "cart:access",
+          "Name": "cart:access",
+          "ModuleId": "VirtoCommerce.Cart",
+          "GroupName": "Cart",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "cart:update",
+          "Name": "cart:update",
+          "ModuleId": "VirtoCommerce.Cart",
+          "GroupName": "Cart",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "cart:delete",
+          "Name": "cart:delete",
+          "ModuleId": "VirtoCommerce.Cart",
+          "GroupName": "Cart",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "content:read",
+          "Name": "content:read",
+          "ModuleId": "VirtoCommerce.Content",
+          "GroupName": "Content",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "content:access",
+          "Name": "content:access",
+          "ModuleId": "VirtoCommerce.Content",
+          "GroupName": "Content",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "content:create",
+          "Name": "content:create",
+          "ModuleId": "VirtoCommerce.Content",
+          "GroupName": "Content",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "content:delete",
+          "Name": "content:delete",
+          "ModuleId": "VirtoCommerce.Content",
+          "GroupName": "Content",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "Contract:access",
+          "Name": "Contract:access",
+          "ModuleId": "VirtoCommerce.Contracts",
+          "GroupName": "Contract",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "Contract:create",
+          "Name": "Contract:create",
+          "ModuleId": "VirtoCommerce.Contracts",
+          "GroupName": "Contract",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "Contract:read",
+          "Name": "Contract:read",
+          "ModuleId": "VirtoCommerce.Contracts",
+          "GroupName": "Contract",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "Contract:update",
+          "Name": "Contract:update",
+          "ModuleId": "VirtoCommerce.Contracts",
+          "GroupName": "Contract",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "Contract:delete",
+          "Name": "Contract:delete",
+          "ModuleId": "VirtoCommerce.Contracts",
+          "GroupName": "Contract",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        }
+      ],
+      "Id": "b629f7c6-85a0-4602-93d0-e66e2891c22e",
+      "Name": "CSR",
+      "NormalizedName": "CSR",
+      "ConcurrencyStamp": "9c9c633c-7530-45ec-b87b-eb6e8920d283"
+    },
+    {
+      "Description": "Worked with only with self assigned orders",
+      "Permissions": [
+        {
+          "Id": "order:access",
+          "Name": "order:access",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "order:update",
+          "Name": "order:update",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "OnlyOrderResponsibleScope",
+              "Label": "none",
+              "Scope": "{{userId}}"
+            },
+            {
+              "Type": "OrderSelectedStoreScope"
+            }
+          ]
+        },
+        {
+          "Id": "order:read",
+          "Name": "order:read",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "OnlyOrderResponsibleScope",
+              "Label": "none",
+              "Scope": "{{userId}}"
+            },
+            {
+              "Type": "OrderSelectedStoreScope"
+            }
+          ]
+        },
+        {
+          "Id": "order:create",
+          "Name": "order:create",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "order:delete",
+          "Name": "order:delete",
+          "ModuleId": "VirtoCommerce.Orders",
+          "GroupName": "Orders",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "OnlyOrderResponsibleScope",
+              "Label": "none",
+              "Scope": "{{userId}}"
+            },
+            {
+              "Type": "OrderSelectedStoreScope"
+            }
+          ]
+        },
+        {
+          "Id": "catalog:create",
+          "Name": "catalog:create",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "catalog:read",
+          "Name": "catalog:read",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "SelectedCatalogScope"
+            }
+          ]
+        },
+        {
+          "Id": "catalog:update",
+          "Name": "catalog:update",
+          "GroupName": "Catalog",
+          "AssignedScopes": [],
+          "AvailableScopes": [
+            {
+              "Type": "SelectedCatalogScope"
+            }
+          ]
+        }
+      ],
+      "Id": "c6bd04db2f3744bb83c245c84375fc66",
+      "Name": "Order manager",
+      "NormalizedName": "ORDER MANAGER",
+      "ConcurrencyStamp": "c0da95a2-d94f-4960-9c22-82d1de4b012d"
+    },
+    {
+      "Description": "This role allow to use web api",
+      "Permissions": [
+        {
+          "Id": "security:call_api",
+          "Name": "security:call_api",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        }
+      ],
+      "Id": "e75700bb597948cca7962e0bbcfdb97c",
+      "Name": "Use api",
+      "NormalizedName": "USE API",
+      "ConcurrencyStamp": "e651ab12-1f1a-4973-9517-b37b9352622e"
+    },
+    {
+      "Permissions": [
+        {
+          "Id": "storefront:organization:view",
+          "Name": "storefront:organization:view",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        }
+      ],
+      "Id": "org-employee",
+      "Name": "Organization employee",
+      "NormalizedName": "ORGANIZATION EMPLOYEE",
+      "ConcurrencyStamp": "43b98806-b3e2-4c94-8a15-fe2a09dbe750"
+    },
+    {
+      "Permissions": [
+        {
+          "Id": "storefront:user:view",
+          "Name": "storefront:user:view",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:user:create",
+          "Name": "storefront:user:create",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:organization:view",
+          "Name": "storefront:organization:view",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:user:delete",
+          "Name": "storefront:user:delete",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:organization:edit",
+          "Name": "storefront:organization:edit",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:user:edit",
+          "Name": "storefront:user:edit",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:user:invite",
+          "Name": "storefront:user:invite",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        }
+      ],
+      "Id": "org-maintainer",
+      "Name": "Organization maintainer",
+      "NormalizedName": "ORGANIZATION MAINTAINER",
+      "ConcurrencyStamp": "bbb04177-fe9b-43d8-93f1-d6cad34e7116"
+    },
+    {
+      "Permissions": [
+        {
+          "Id": "storefront:organization:view",
+          "Name": "storefront:organization:view",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        }
+      ],
+      "Id": "purchasing-agent",
+      "Name": "Purchasing agent",
+      "NormalizedName": "PURCHASING AGENT",
+      "ConcurrencyStamp": "4b694df1-4f7b-4531-a68c-017cee26a470"
+    },
+    {
+      "Permissions": [
+        {
+          "Id": "storefront:user:view",
+          "Name": "storefront:user:view",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:user:create",
+          "Name": "storefront:user:create",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:organization:view",
+          "Name": "storefront:organization:view",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:user:delete",
+          "Name": "storefront:user:delete",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:organization:edit",
+          "Name": "storefront:organization:edit",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:user:edit",
+          "Name": "storefront:user:edit",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:user:invite",
+          "Name": "storefront:user:invite",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:order:view",
+          "Name": "storefront:order:view",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:order:changestatus",
+          "Name": "storefront:order:changestatus",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        }
+      ],
+      "Id": "store-admin",
+      "Name": "Store administrator",
+      "NormalizedName": "STORE ADMINISTRATOR",
+      "ConcurrencyStamp": "f001345e-9a6c-43c2-a830-1871b7d43850"
+    },
+    {
+      "Permissions": [
+        {
+          "Id": "storefront:organization:view",
+          "Name": "storefront:organization:view",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:order:view",
+          "Name": "storefront:order:view",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        },
+        {
+          "Id": "storefront:order:changestatus",
+          "Name": "storefront:order:changestatus",
+          "AssignedScopes": [],
+          "AvailableScopes": []
+        }
+      ],
+      "Id": "store-manager",
+      "Name": "Store manager",
+      "NormalizedName": "STORE MANAGER",
+      "ConcurrencyStamp": "04877520-e3a8-4074-8c9b-db4e071f7c74"
+    }],"Users":[
+    {
+      "IsAdministrator": true,
+      "UserType": "Administrator",
+      "CreatedDate": "2022-10-27T12:48:45.2213385",
+      "ModifiedDate": "2022-10-27T12:59:38.3833116",
+      "CreatedBy": "unknown",
+      "ModifiedBy": "admin",
+      "Roles": [],
+      "LockoutEndDateUtc": "2022-10-05T09:18:20.4264065Z",
+      "UserState": "PendingApproval",
+      "Permissions": [],
+      "Logins": [],
+      "PasswordExpired": false,
+      "LastPasswordChangedDate": "2022-05-18T07:27:04.9708098",
+      "Id": "1eb2fa8ac6574541afdb525833dadb46",
+      "UserName": "admin",
+      "NormalizedUserName": "ADMIN",
+      "Email": "admin@vc-demostore.com",
+      "NormalizedEmail": "ADMIN@VC-DEMOSTORE.COM",
+      "EmailConfirmed": false,
+      "PasswordHash": "AQAAAAEAACcQAAAAENijc+DQ7sFWPu9SSBG7NPQ3teagDkpzuePmOQD31XHlhpwn2DqfHsfVT/plLOkNhw==",
+      "SecurityStamp": "T72ABLGSTG4JXFTYPHBXTSL4SX7UMKLP",
+      "ConcurrencyStamp": "72154db1-4263-43ff-a8ec-8de7dca59a65",
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnd": "2022-10-05T09:18:20.4264065+00:00",
+      "LockoutEnabled": false,
+      "AccessFailedCount": 0
+    }],"UserApiKeys":[],"Settings":[
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "8662cede-0ea6-42bc-bff5-2c7ea57f8159",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.CatalogPersonalization",
+      "GroupName": "Personalization|General",
+      "Name": "CatalogPersonalization.TagsInheritancePolicy",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "DownTree",
+        "UpTree"
+      ],
+      "DefaultValue": "DownTree",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "c16ebd33-496e-4ed6-9750-56d08b5747e5",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Customer",
+      "GroupName": "Customer|General",
+      "Name": "Customer.MemberGroups",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "Wholesaler",
+        "VIP"
+      ],
+      "DefaultValue": "New",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": 50,
+      "Id": "84e0ab7d-0e32-410a-b518-7621c31e4730",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Customer",
+      "GroupName": "Customer|General",
+      "Name": "Customer.ExportImport.PageSize",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 8,
+      "DefaultValue": 50,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "2022-10-27T14:10:03.8235662",
+      "Id": "e6eee2f9-d1d0-4975-9b9c-b054b63ac62e",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Customer",
+      "GroupName": "Customer|General",
+      "Name": "VirtoCommerce.Search.IndexingJobs.IndexationDate.Member",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 4,
+      "DefaultValue": "0001-01-01T00:00:00",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": true,
+      "Id": "2c5cfc3d-26a8-46b9-9c3c-0018923f0562",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Customer",
+      "GroupName": "Customer|General",
+      "Name": "Customer.Search.EventBasedIndexation.Enable",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": false,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "505819fe-eb5c-4c5d-8cbe-2d879d47ebc5",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Customer",
+      "GroupName": "Customer|Statuses",
+      "Name": "Customer.OrganizationStatuses",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "Approved",
+        "Rejected",
+        "Deleted",
+        "New"
+      ],
+      "DefaultValue": "New",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "a12d8ee4-0340-4f2b-bd0d-cd2d7f07182a",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Customer",
+      "GroupName": "Customer|Statuses",
+      "Name": "Customer.VendorStatuses",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "Deleted",
+        "Approved",
+        "New",
+        "Rejected"
+      ],
+      "DefaultValue": "New",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "76353eb0-d40b-4b87-8c06-d06e86e6339e",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Customer",
+      "GroupName": "Customer|Statuses",
+      "Name": "Customer.EmployeeStatuses",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "Approved",
+        "New",
+        "Rejected",
+        "Deleted"
+      ],
+      "DefaultValue": "New",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "5ccdfc19-e71f-4722-9d30-d14001c3313d",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Customer",
+      "GroupName": "Customer|Statuses",
+      "Name": "Customer.ContactStatuses",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "Rejected",
+        "Deleted",
+        "Approved",
+        "New"
+      ],
+      "DefaultValue": "New",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": 0.00000,
+      "Id": "0639b6e1-43cd-4329-9f74-3fc9c9f1905c",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Tax",
+      "GroupName": "Tax|FixedTaxProvider",
+      "Name": "VirtoCommerce.Core.FixedTaxRateProvider.Rate",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 3,
+      "DefaultValue": 0.00,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": true,
+      "Id": "369dff2f-ce97-4ee3-a936-fec585eb37af",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Subscription",
+      "GroupName": "Subscriptions|Subscriptions",
+      "Name": "Subscription.EnableSubscriptions",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": true,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "279a88df-4214-4844-bf69-6e9fcfac56b1",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Subscription",
+      "GroupName": "Subscriptions|General",
+      "Name": "Subscription.Status",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "Unpaid",
+        "Cancelled",
+        "PastDue",
+        "Trialling",
+        "Active"
+      ],
+      "DefaultValue": "Active",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "SU{0:yyMMdd}-{1:D5}",
+      "Id": "42aaf52f-58d7-4d57-a703-cd5e1eeef5ba",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Subscription",
+      "GroupName": "Subscriptions|Subscriptions",
+      "Name": "Subscription.SubscriptionNewNumberTemplate",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "DefaultValue": "SU{0:yyMMdd}-{1:D5}",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": true,
+      "Id": "016d2be4-5462-4533-b0e2-e10fca23271b",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Subscription",
+      "GroupName": "Subscriptions|General",
+      "Name": "Subscription.EnableSubscriptionOrdersCreateJob",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": true,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "0 0 1/1 * *",
+      "Id": "77b49951-efb1-4d39-9707-29f41236f493",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Subscription",
+      "GroupName": "Subscriptions|General",
+      "Name": "Subscription.CronExpression",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "DefaultValue": "0 */1 * * *",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "0/15 0 1/1 * *",
+      "Id": "cb78c090-9d18-4e04-9d07-9b802cfa3af8",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Subscription",
+      "GroupName": "Subscriptions|General",
+      "Name": "Subscription.CronExpressionOrdersJob",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "DefaultValue": "0 0 */1 * *",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": 7,
+      "Id": "f8cfbb28-b3a8-4854-806f-27ce19c78e1c",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Subscription",
+      "GroupName": "Subscriptions|General",
+      "Name": "Subscription.PastDue.Delay",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 2,
+      "DefaultValue": 7,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "Export/Import of subscriptions",
+      "Id": "0f530b28-11e9-4a4f-a177-a775b205330c",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Subscription",
+      "GroupName": "Subscriptions|General",
+      "Name": "Subscription.ExportImport.Description",
+      "IsRequired": false,
+      "IsHidden": true,
+      "ValueType": 0,
+      "DefaultValue": "Export/Import of subscriptions",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "BestReward",
+      "Id": "db8738dd-c4d5-41b1-95f9-d18a86c19a30",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Marketing",
+      "GroupName": "Marketing|General",
+      "Name": "Marketing.Promotion.CombinePolicy",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "BestReward",
+        "CombineStackable"
+      ],
+      "DefaultValue": "BestReward",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": false,
+      "Id": "b1def70c-3ff8-4c9b-9d33-84ff32f55626",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.ImageTools",
+      "GroupName": "Thumbnail|General",
+      "Name": "ImageTools.Thumbnails.EnableImageProcessJob",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": false,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "0 0 * * *",
+      "Id": "a3d28144-ce71-499b-907b-6427eb49a2b5",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.ImageTools",
+      "GroupName": "Thumbnail|General",
+      "Name": "ImageTools.Thumbnails.ImageProcessJobCronExpression",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "DefaultValue": "0 0 * * *",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "182dd34e-d0a5-4ede-a355-83b76b149c54",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Store",
+      "GroupName": "Store|General",
+      "Name": "Stores.States",
+      "IsRequired": false,
+      "IsHidden": true,
+      "ValueType": 0,
+      "AllowedValues": [
+        "RestrictedAccess",
+        "Open",
+        "Closed"
+      ],
+      "DefaultValue": "Open",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": true,
+      "Id": "d73242ca-94b5-4975-8861-2c2bad9fb73f",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Store",
+      "GroupName": "Store|General",
+      "Name": "Stores.TaxCalculationEnabled",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": true,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "Long",
+      "Id": "dbbf7478-ecb3-4729-9c2e-3d38fc622cfc",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Store",
+      "GroupName": "Store|SEO",
+      "Name": "Stores.SeoLinksType",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "None",
+        "Short",
+        "Collapsed",
+        "Long"
+      ],
+      "DefaultValue": "Collapsed",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "d0919a11-9fe7-46f2-8b0c-adf952b15b97",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Store",
+      "GroupName": "Product Reviews|General",
+      "Name": "CustomerReviews.Calculation.Method",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "Average",
+        "Wilson"
+      ],
+      "DefaultValue": "Average",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "942532a9-cd7b-4502-9df5-719ae81c3fff",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Notifications",
+      "GroupName": "Notifications|General",
+      "Name": "VirtoCommerce.Notifications.General.Languages",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "de-DE",
+        "en-US"
+      ],
+      "DefaultValue": "en-US",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": 10000,
+      "Id": "d2b16d27-0b41-4f32-a858-ac2d4efb59bb",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Sitemaps",
+      "GroupName": "Sitemap|General",
+      "Name": "Sitemap.RecordsLimitPerFile",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 8,
+      "DefaultValue": 10000,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "--",
+      "Id": "b1afe0fe-1dbd-4e0b-a6cb-89987666bea1",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Sitemaps",
+      "GroupName": "Sitemap|General",
+      "Name": "Sitemap.FilenameSeparator",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "DefaultValue": "--",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": 500,
+      "Id": "234b860c-8911-4e79-8a87-e8b3307be78c",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Sitemaps",
+      "GroupName": "Sitemap|General",
+      "Name": "Sitemap.SearchBunchSize",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 8,
+      "DefaultValue": 500,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": ".md,.html",
+      "Id": "c715cff4-0aca-4c2e-9836-1583a8bcaa12",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Sitemaps",
+      "GroupName": "Sitemap|General",
+      "Name": "Sitemap.AcceptedFilenameExtensions",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "DefaultValue": ".md,.html",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "daily",
+      "Id": "520293cb-74fb-4793-b335-58c2a90e7cd7",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Sitemaps",
+      "GroupName": "Sitemap|Sitemaps",
+      "Name": "Sitemap.ProductPageUpdateFrequency",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "always",
+        "hourly",
+        "daily",
+        "weekly",
+        "monthly",
+        "yearly",
+        "never"
+      ],
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": 1.00000,
+      "Id": "a4c0a77f-6242-49c7-97e2-014a8c20d0e4",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Sitemaps",
+      "GroupName": "Sitemap|Sitemaps",
+      "Name": "Sitemap.ProductPagePriority",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 3,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "weekly",
+      "Id": "641c736f-5d25-4daf-97c3-eb94bc31e98e",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Sitemaps",
+      "GroupName": "Sitemap|Sitemaps",
+      "Name": "Sitemap.CategoryPageUpdateFrequency",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "always",
+        "hourly",
+        "daily",
+        "weekly",
+        "monthly",
+        "yearly",
+        "never"
+      ],
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": 0.70000,
+      "Id": "e92c8ec7-9df6-4a43-9a49-258ecc0bd38e",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Sitemaps",
+      "GroupName": "Sitemap|Sitemaps",
+      "Name": "Sitemap.CategoryPagePriority",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 3,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "c0a5f2a0-7bff-4e28-95f7-ea0ac9990ed6",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Sitemaps",
+      "GroupName": "Sitemap|Sitemaps",
+      "Name": "Sitemap.BlogPageUpdateFrequency",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "always",
+        "hourly",
+        "daily",
+        "weekly",
+        "monthly",
+        "yearly",
+        "never"
+      ],
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": true,
+      "Id": "6a7ed8dc-6186-45f5-8128-3225ed40207f",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Inventory",
+      "GroupName": "Inventory | Search",
+      "Name": "Inventory.Search.EventBasedIndexation.Enable",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": false,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "decb470b-98f9-4c9b-bd67-3e12a31172a3",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Quote",
+      "GroupName": "Quotes|General",
+      "Name": "Quotes.Status",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "Proposal sent",
+        "Ordered",
+        "Processing",
+        "New"
+      ],
+      "DefaultValue": "New",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "87648327-a5fa-456d-b6ec-02e7364f6f93",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Orders",
+      "GroupName": "Orders|General",
+      "Name": "Order.Status",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "Cancelled",
+        "Processing",
+        "Completed",
+        "New",
+        "Pending"
+      ],
+      "DefaultValue": "New",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "0ed67de2-69f7-439c-aaf7-a9fa4c14ad5f",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Orders",
+      "GroupName": "Orders|General",
+      "Name": "Shipment.Status",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "Send",
+        "PickPack",
+        "ReadyToSend",
+        "Cancelled",
+        "New"
+      ],
+      "DefaultValue": "New",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "fc555f7c-b20f-43f8-bc01-650c67056e2a",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Orders",
+      "GroupName": "Orders|General",
+      "Name": "PaymentIn.Status",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "PartiallyRefunded",
+        "Authorized",
+        "New",
+        "Voided",
+        "Paid",
+        "Refunded",
+        "Cancelled",
+        "Pending",
+        "Custom"
+      ],
+      "DefaultValue": "New",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "CO{0:yyMMdd}-{1:D5}",
+      "Id": "d9003220-6426-4797-9904-d244d36741a0",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Orders",
+      "GroupName": "Orders|Orders",
+      "Name": "Order.CustomerOrderNewNumberTemplate",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "DefaultValue": "CO{0:yyMMdd}-{1:D5}",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "SH{0:yyMMdd}-{1:D5}",
+      "Id": "fccfd155-c668-4acd-9e30-f0b6e04a156c",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Orders",
+      "GroupName": "Orders|Orders",
+      "Name": "Order.ShipmentNewNumberTemplate",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "DefaultValue": "SH{0:yyMMdd}-{1:D5}",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "PI{0:yyMMdd}-{1:D5}",
+      "Id": "b1cca6e7-8bf0-44d4-b6e9-9d1afa944888",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Orders",
+      "GroupName": "Orders|Orders",
+      "Name": "Order.PaymentInNewNumberTemplate",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "DefaultValue": "PI{0:yyMMdd}-{1:D5}",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": true,
+      "Id": "832eef7b-f153-42be-8c01-b101b60144a3",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Orders",
+      "GroupName": "Orders|General",
+      "Name": "Order.SendOrderNotifications",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": true,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": true,
+      "Id": "e7520a99-73d0-4ba4-84a1-e63be2ecc560",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Orders",
+      "GroupName": "Orders|General",
+      "Name": "Order.AdjustInventory",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": true,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": true,
+      "Id": "3a78b637-b76e-4ee9-b719-760e7c11e389",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Orders",
+      "GroupName": "Orders|General",
+      "Name": "Order.LogOrderChanges",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": true,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": true,
+      "Id": "a0920699-8f9a-4234-9e65-a69897db5643",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Orders",
+      "GroupName": "Orders|General",
+      "Name": "Order.Search.EventBasedIndexation.Enable",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": false,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "2022-10-27T14:10:04.0313577",
+      "Id": "be9647a8-46a1-4fa7-9ea0-10bc09a29c80",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Orders",
+      "GroupName": "Orders|General",
+      "Name": "VirtoCommerce.Search.IndexingJobs.IndexationDate.CustomerOrder",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 4,
+      "DefaultValue": "0001-01-01T00:00:00",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": 50,
+      "Id": "f508822e-92e1-4bfe-bba9-dce3eede901c",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Pricing",
+      "GroupName": "Pricing|General",
+      "Name": "Pricing.ExportImport.PageSize",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 8,
+      "DefaultValue": 50,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": true,
+      "Id": "8c5e50a0-f67f-4ae5-9875-2f94ea52fb07",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Pricing",
+      "GroupName": "Pricing|General",
+      "Name": "Pricing.Search.EventBasedIndexation.Enable",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": false,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "6fb65cf4-4c3c-4743-9d3b-9457cc7200b6",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Core",
+      "GroupName": "Core|General",
+      "Name": "VirtoCommerce.Core.General.WeightUnits",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "ounce",
+        "kg",
+        "gram",
+        "pound"
+      ],
+      "DefaultValue": "gram",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "6d77da1f-3acd-4c10-bc09-fda566302d90",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Core",
+      "GroupName": "Core|General",
+      "Name": "VirtoCommerce.Core.General.MeasureUnits",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "mm",
+        "ft",
+        "m",
+        "in"
+      ],
+      "DefaultValue": "mm",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "d030b6ab-411b-480a-ae21-29d023cba93e",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Core",
+      "GroupName": "Core|General",
+      "Name": "VirtoCommerce.Core.General.Languages",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "en-US",
+        "fr-FR",
+        "de-DE"
+      ],
+      "DefaultValue": "en-US",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "6bc07ce4-7254-49cb-ae13-76872f409866",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Catalog",
+      "GroupName": "Catalog|General",
+      "Name": "Catalog.ImageCategories",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "Images"
+      ],
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "68e82cb9-46dc-4f4d-a294-30ace4c751fe",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Catalog",
+      "GroupName": "Catalog|General",
+      "Name": "Catalog.AssociationGroups",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "Accessories",
+        "Related Items"
+      ],
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "9037d528-00c4-45da-a689-e4012a851da5",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Catalog",
+      "GroupName": "Catalog|General",
+      "Name": "Catalog.EditorialReviewTypes",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "FullReview",
+        "QuickReview"
+      ],
+      "DefaultValue": "QuickReview",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Id": "2e13844d-4e66-44f0-b999-90c8eb16d748",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Catalog",
+      "GroupName": "Catalog|General",
+      "Name": "Catalog.CategoryDescriptionTypes",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 0,
+      "AllowedValues": [
+        "QuickReview",
+        "FullReview"
+      ],
+      "DefaultValue": "QuickReview",
+      "IsDictionary": true
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": true,
+      "Id": "47cd3a4e-381a-4c2c-8096-a17139c8a965",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Catalog",
+      "GroupName": "Catalog|General",
+      "Name": "Catalog.Search.EventBasedIndexation.Enable",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": false,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": true,
+      "Id": "3928f1d5-118f-4c1f-a560-dbe3cc01bdce",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Catalog",
+      "GroupName": "Catalog|Search",
+      "Name": "Catalog.Search.UseCatalogIndexedSearchInManager",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": true,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": false,
+      "Id": "1edca1d2-fa21-4ccf-91c2-9956f6b05e90",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Catalog",
+      "GroupName": "Catalog|Search",
+      "Name": "Catalog.Search.UseFullObjectIndexStoring",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 5,
+      "DefaultValue": false,
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "2022-10-27T14:10:02.7971705",
+      "Id": "3f8a5a4c-8d7b-47b0-9e30-c19c4b7963e3",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Catalog",
+      "GroupName": "Catalog|Search",
+      "Name": "VirtoCommerce.Search.IndexingJobs.IndexationDate.Product",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 4,
+      "DefaultValue": "0001-01-01T00:00:00",
+      "IsDictionary": false
+    },
+    {
+      "ItHasValues": true,
+      "IsReadOnly": false,
+      "Value": "2022-10-27T14:10:03.6652987",
+      "Id": "86ed27f1-5bf7-42f1-a9cc-d4d5e4a5dbb6",
+      "RestartRequired": false,
+      "ModuleId": "VirtoCommerce.Catalog",
+      "GroupName": "Catalog|Search",
+      "Name": "VirtoCommerce.Search.IndexingJobs.IndexationDate.Category",
+      "IsRequired": false,
+      "IsHidden": false,
+      "ValueType": 4,
+      "DefaultValue": "0001-01-01T00:00:00",
+      "IsDictionary": false
+    }],"DynamicProperties":[
+    {
+      "Name": "aliases",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": true,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 1,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0898972",
+      "ModifiedDate": "2022-10-27T12:48:34.0898972",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "Alias_FrontMatterHeader"
+    },
+    {
+      "Name": "authorize",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 6,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0914428",
+      "ModifiedDate": "2022-10-27T12:48:34.0914428",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "Authorize_FrontMatterHeader"
+    },
+    {
+      "Name": "categories",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": true,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 1,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0895277",
+      "ModifiedDate": "2022-10-27T12:48:34.0895277",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "Categories_FrontMatterHeader"
+    },
+    {
+      "Name": "category",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 1,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0894298",
+      "ModifiedDate": "2022-10-27T12:48:34.0894298",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "Category_FrontMatterHeader"
+    },
+    {
+      "Name": "Content type",
+      "ObjectType": "VirtoCommerce.MarketingModule.Core.Model.DynamicContentItem",
+      "IsArray": false,
+      "IsDictionary": true,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 1,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:33.7398205",
+      "ModifiedDate": "2022-10-27T12:48:33.7398205",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "Marketing_DynamicContentItem_Type_Property"
+    },
+    {
+      "Name": "date",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 5,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0912153",
+      "ModifiedDate": "2022-10-27T12:48:34.0912153",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "date_FrontMatterHeader"
+    },
+    {
+      "Name": "DefaultThemeName",
+      "ObjectType": "VirtoCommerce.StoreModule.Core.Model.Store",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 1,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0913151",
+      "ModifiedDate": "2022-10-27T12:48:34.0913151",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "Default_Theme_Name_Property"
+    },
+    {
+      "Name": "FilteredBrowsing",
+      "ObjectType": "VirtoCommerce.StoreModule.Core.Model.Store",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 2,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:21.1982787",
+      "ModifiedDate": "2022-10-27T12:48:21.1982787",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "VirtoCommerce.Catalog_FilteredBrowsing_Property"
+    },
+    {
+      "Name": "is-sticked",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 6,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.090064",
+      "ModifiedDate": "2022-10-27T12:48:34.090064",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "isSticked_FrontMatterHeader"
+    },
+    {
+      "Name": "is-trending",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 6,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0910969",
+      "ModifiedDate": "2022-10-27T12:48:34.0910969",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "isTrending_FrontMatterHeader"
+    },
+    {
+      "Name": "layout",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 1,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0881353",
+      "ModifiedDate": "2022-10-27T12:48:34.0881353",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "Layout_FrontMatterHeader"
+    },
+    {
+      "Name": "main-image",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 1,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0901636",
+      "ModifiedDate": "2022-10-27T12:48:34.0901636",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "mainImage_FrontMatterHeader"
+    },
+    {
+      "Name": "permalink",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 1,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0883742",
+      "ModifiedDate": "2022-10-27T12:48:34.0883742",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "Permalink_FrontMatterHeader"
+    },
+    {
+      "Name": "published",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 6,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0885228",
+      "ModifiedDate": "2022-10-27T12:48:34.0885228",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "Published_FrontMatterHeader"
+    },
+    {
+      "Name": "tags",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": true,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 1,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0897619",
+      "ModifiedDate": "2022-10-27T12:48:34.0897619",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "Tags_FrontMatterHeader"
+    },
+    {
+      "Name": "template",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 1,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0882935",
+      "ModifiedDate": "2022-10-27T12:48:34.0882935",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "Template_FrontMatterHeader"
+    },
+    {
+      "Name": "title",
+      "ObjectType": "VirtoCommerce.ContentModule.Core.Model.FrontMatterHeaders",
+      "IsArray": false,
+      "IsDictionary": false,
+      "IsMultilingual": false,
+      "IsRequired": false,
+      "ValueType": 1,
+      "DisplayNames": [],
+      "CreatedDate": "2022-10-27T12:48:34.0879886",
+      "ModifiedDate": "2022-10-27T12:48:34.0879886",
+      "CreatedBy": "Auto",
+      "ModifiedBy": "Auto",
+      "Id": "Title_FrontMatterHeader"
+    }],"DynamicPropertyDictionaryItems":[]}
