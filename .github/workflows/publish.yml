@@ -24,7 +24,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Zip sample data
-      run: zip -r adminOnlySampleData.zip ./Setup/adminOnlySampleData/ -j -x '*.gitattributes*'
+      run: zip -r adminOnlySampleData2.zip ./Setup/adminOnlySampleData2/ -j -x '*.gitattributes*'
 
     - name: Upload a Build Artifact to Azure Blob Storage
       uses: fixpoint/azblob-upload-artifact@v3.3
@@ -34,7 +34,7 @@ jobs:
         # Artifact name
         name: .
         # Directory containing files to upload
-        path: adminOnlySampleData.zip
+        path: adminOnlySampleData2.zip
         # Container name
         container: sample-data # optional, default is github-action-artifacts
         # Remove all blobs under the target blob (use "true" to enable this option)
