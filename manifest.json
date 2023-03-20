@@ -1,42 +1,7 @@
 [
-  
-	{
-        "name": "Clothing and Electronics",
-        "description": "Contains sample data for demo",
-        "url": "clothing-and-electronics_2_13_26.zip",
-        "size": "62mb",
-        "platformVersion": "2.13.26"
-    },
-	{
-        "name": "Clothing and Electronics",
-        "description": "Contains sample data for demo",
-        "url": "clothing-and-electronics_2_13_35.zip",
-        "size": "62mb",
-        "platformVersion": "2.13.35"
-    },
-	{
-        "name": "Clothing and Electronics",
-        "description": "Contains sample data for demo",
-        "url": "clothing-and-electronics_2_13_47.zip",
-        "size": "62mb",
-        "platformVersion": "2.13.47"
-    },
-	{
-        "name": "Clothing and Electronics",
-        "description": "Contains sample data for demo",
-        "url": "clothing-and-electronics_3_0_0.zip",
-        "size": "63mb",
-        "platformVersion": "3.0.0"
-    },
-	{
-        "name": "Clothing and Electronics without themes",
-        "description": "Contains sample data for demo",
-        "url": "clothing-and-electronics-themeless_3_0_0.zip",
-        "size": "50mb",
-        "platformVersion": "3.0.0"
-    },	{
-        "name": "B2B sample store",
-        "description": "Contains sample data for B2B sample",
+    {
+        "name": "B2B Sample Store",
+        "description": "Contains sample data for B2B store sample",
         "url": "b2b-sample-store.zip",
         "size": "50mb",
         "platformVersion": "3.253.0"
