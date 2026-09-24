@@ -18,7 +18,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v5
       with:
         lfs: true
 
@@ -26,16 +26,10 @@ jobs:
     - name: Zip sample data
       run: zip -r b2b-sample-store.zip ./Setup/B2BSampleStore/ -j -x '*.gitattributes*'
 
+    # Azure CLI is preinstalled on GitHub-hosted Ubuntu runners
     - name: Upload a Build Artifact to Azure Blob Storage
-      uses: fixpoint/azblob-upload-artifact@v3.3
-      with:
-        # Connection string
-        connection-string: ${{ secrets.BLOB_STORAGE_CONNECTION_STRING }}
-        # Artifact name
-        name: .
-        # Directory containing files to upload
-        path: b2b-sample-store.zip
-        # Container name
-        container: sample-data # optional, default is github-action-artifacts
-        # Remove all blobs under the target blob (use "true" to enable this option)
-        cleanup: true # optional, default is false
+      env:
+        AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.BLOB_STORAGE_CONNECTION_STRING }}
+      run: |
+        az storage container create --name sample-data --only-show-errors
+        az storage blob upload --container-name sample-data --name b2b-sample-store.zip --file b2b-sample-store.zip --overwrite --only-show-errors
